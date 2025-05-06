@@ -4,6 +4,13 @@ const lenis = new Lenis({
   lerp: 0.17
 });
 
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  base: '/actef-chemicals/', // 🔥 your repo name here
+})
+
+
 gsap.to('.home-img-banner' , {
   scrollTrigger:{
     scrub:true,
