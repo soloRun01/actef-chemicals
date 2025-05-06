@@ -1,0 +1,710 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'fontMain';
+  cursor: default;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+
+}
+
+@font-face {
+  font-family: 'fontMain';
+  src: url(../public/fonts/AutautGrotesk-Medium.otf);
+}
+
+.home{
+  height: 200vh;
+  width: 100%;
+  background: white;
+}
+
+.border-home-title{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.border-home-title h5{
+  width: 60%;
+  font-size: 2.3rem;
+  text-align: center;
+  line-height: 40px;
+}
+
+.img-part-home{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.home-img-banner{
+  width: 17%;
+  height: 40%;
+  background: url(../public/images/homeimg1.jpg);
+  background-position: top;
+  background-size: 130%;
+  border-radius: 10px;
+  filter: brightness(0.8);
+  margin-bottom: 80px;
+}
+
+.products{
+  height: 220vh;
+  width: 100%;
+  background: white;
+}
+
+
+.border-p-products{
+  width:100%;
+  display: flex;
+  justify-content: end;
+}
+.border-p-products p{
+  width: 40%;
+}
+
+/* 
+.C{
+  width: 100%;
+  height: 30em;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding: 0 10px;
+}
+
+.C h1{
+  font-size: 17rem;
+  opacity: 0.7;
+} */
+
+
+.famous-products{
+  height: 160vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  justify-content: end;
+}
+.products-title{
+  font-size: 6rem;
+  height: 13em;
+  display: flex;
+  width: 100%;
+  align-items: end;
+  padding: 0 120px;
+}
+
+.products-bg{
+  width: 100%;
+  height: 260vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 19px;
+}
+.product{
+  width: 48%;
+  height: 58%;
+  background: grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.clients{
+  height: 90vh;
+  width: 100%;
+  background: white;
+}
+.border-title-para-clients p{
+  width: 70%;
+  margin: 0 30px;
+}
+
+
+.clients-title{
+  font-size:3rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 5em;
+}
+
+.navbar{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 5em;
+  z-index: 99999999999;
+}
+.navbar ul{
+  padding: 0 90px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.navbar ul li{
+  display: flex;
+  margin: 0 20px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 2px;
+  transition: 0.3s ease-in-out;
+}
+.navbar ul li a:hover{
+  background: cyan;
+}
+
+
+
+.the-clients{
+  display: flex;
+  width: 100%;
+  height: 20em;
+  overflow: hidden;
+}
+.content{
+  display: flex;
+  white-space: nowrap;
+  animation: loopy 18s linear infinite;
+  cursor: pointer;
+
+}
+
+.the-clients:hover .content{
+  animation-play-state: paused;
+
+}
+
+.border-home-title h5 div {
+  width: 120px;
+  
+  height: 40px;
+  background: url(../public/images/homeimg.jpg);
+  background-size: cover;
+  background-position: 0 -10px;
+  position: absolute;
+  border-radius: 10px;
+  left: 794px;
+  top: 282px;
+}
+
+.client img{
+  height: 70%;
+  width: auto;
+  margin: 70px 90px;
+  filter: saturate(0.5);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.client img:hover{
+  filter: saturate(0.9);
+}
+
+
+
+
+@keyframes loopy {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+ 
+}
+
+
+
+.services{
+  width: 100%;
+  background: white;
+  height: 230vh;
+}
+
+.services-title{
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: end;
+  font-size: 5.5rem;
+}
+.services-title h1{
+  margin: -30px 30px;
+}
+
+.services-grid{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.grid{
+  background: grey;
+  border-radius: 10px;
+}
+.grid1{
+  width: 93%;
+  background: url(../public/images/pexels-500photos-com-15338-93398.png);
+  height: 27em;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.grid2{
+  width: 51.5%;
+  height: 27em;
+  background:linear-gradient(90deg ,#00000011 , #1111114e), url(../public/images/pexels-tomfisk-5115946.jpg);
+  background-size: cover;
+}
+.grid3{
+  width: 41.5%;
+  height: 27em;
+  background: linear-gradient(#00000011 , #111111c3), url(../public/images/pexels-bill-powers-132132499-11432049.jpg);
+  background-size: cover;
+}
+
+.endContacts{
+  width: 100%;
+  height: 100vh;
+  background: rgb(218, 218, 218);
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.end-links{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 18em;
+  align-items: start;
+}
+.end-links li{
+  display: flex;
+  margin-right: 210px;
+  margin-top: 230px ;
+}
+.end-title{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  height: 27em;
+  align-items: end;
+}
+.end-title h1{
+  font-size: 9rem;
+  margin: 0 20px;
+  transform: scaleY(1.2);
+  letter-spacing: -2px;
+}
+.end-links ul{
+  font-size: 0.7rem;
+}
+
+@media (max-width: 1450px) {
+
+  
+
+.clients-title{
+  font-size:1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 5em;
+}
+
+}
+
+@media (max-width: 1670px) {
+  
+  .home-img-banner{
+    width: 20%;
+  }
+  
+  .border-p-products p{
+    width: 70%;
+    font-size: 1rem;
+  }
+
+}
+
+
+@media (max-width: 920px) {
+  .home-img-banner{
+    width: 40%;
+  }
+  .border-home-title h5{
+    font-size: 1rem;
+    line-height: 20px;
+
+  }
+  .end-links li , .end-links ul{
+    margin: 40px 0;
+  }
+
+.the-clients{
+  display: flex;
+  width: 100%;
+  height: 10em;
+  flex-direction: row;
+  overflow: visible;
+  flex-wrap: wrap;
+}
+
+
+  
+.clients-title{
+  font-size:1rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 8em;
+}
+
+  .border-p-products p{
+    width: 70%;
+    font-size: 0.7rem;
+  }
+
+
+  .products-title{
+    font-size: 3rem;
+    height: 8em;
+    display: flex;
+    align-items: end;
+    padding: 0 20px;
+  }
+  
+  .C h1{
+    font-size: 9rem;
+    opacity: 0.7;
+  }
+
+  .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 0.7rem;
+    transition: 0.3s ease-in-out;
+  }
+  
+.border-title-para-clients p{
+  width: 70%;
+  margin: 0 30px;
+  font-size: 0.6rem;
+  display: flex;
+  height: 40em;
+  align-items: end;
+}
+  
+.the-clients{
+  display: flex;
+  flex-direction: row;
+  
+}
+.content:nth-child(2) {
+  display: none;
+}
+.content{
+  animation: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+}
+.clients img{
+  height: 10vh;
+  width: auto;
+  margin: 20px;
+}
+.services-title h1{
+  font-size: 3.8rem;
+  margin: 0 30px;
+}
+.services-title{
+  height: 2em;
+  align-items: top;
+
+}
+
+.end-title h1{
+  font-size: 3.8rem;
+}
+.end-links{
+  align-items: center;
+}
+.end-links li{
+  margin: 0 20px;
+}
+.end-links ul{
+  margin: 0 20px;
+}
+
+
+.product{
+  width: 88%;
+  height: 38%;
+  background: grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+}
+
+@media (max-width: 504px) {
+  .home-img-banner{
+    width: 70%;
+    background-size: cover;
+  }
+
+  .the-clients{
+    height: 00vh;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+
+  .border-home-title{
+    height: 30vh;
+  }
+  .services-grid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .services{
+    height: 190vh;
+  }
+  .services-title{
+    font-size: 2rem;
+    height: 10em;
+    align-items: center;
+  }
+  .client{
+    height: 480px;
+  }
+  .client img{
+    height: 6%;
+    width: auto;
+  }
+  .grid{
+    width: 90%;
+    height: 17em;
+  }
+
+.clients-title{
+  font-size:0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 15em;
+}
+
+
+  .border-home-title h5{
+    font-size: 0.8rem;
+    line-height: 13px;
+
+  }
+  .end-title{
+    height: 0;
+  }
+
+  .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 0.5rem;
+    transition: 0.3s ease-in-out;
+  }
+  .border-p-products p{
+    width: 70%;
+    font-size: 0.5rem;
+  }
+
+  .C{
+    height: 20em;
+  }
+
+
+  .grid{
+    background-position: end;
+  }
+
+  .C h1{
+    font-size: 7rem;
+    opacity: 0.7;
+  }
+
+  .border-title-para-clients p{
+    width: 90%;
+    margin: 0 10px;
+    font-size: 0.5rem;
+    display: flex;
+    height: 0em;
+    align-items: end;
+  }
+  .end-links li , .end-links ul{
+    margin: 40px 0;
+    font-size: 0.3rem;
+  }
+.product{
+  width: 88%;
+  height: 28%;
+  background: grey;
+  cursor: pointer;
+}
+
+
+}
+
+
+@media (max-width: 424px) {
+  .home-img-banner{
+    width: 70%;
+  }
+
+  
+
+.clients-title{
+  font-size:0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 15em;
+}
+
+.services-title h1{
+  font-size: 2.8rem;
+  margin: 0 30px;
+}
+.services-title{
+  height: 1em;
+  align-items: top;
+
+}
+  .border-home-title h5 div{
+    display: none;
+  }
+
+  .products-title h2{
+    font-size: 2rem;
+  }
+
+  .end-links{
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .end-links li{
+    margin: 0px 20px;
+    font-size: 0.4rem;
+  }
+
+  .end-links ul{
+    font-size: 0.4rem;
+    margin: 0 20px;
+  }
+
+
+  .end-title{
+    height: 20em;
+  }
+  .end-title h1{
+    font-size: 3.2rem;
+  }
+
+  .border-home-title h5{
+    font-size: 0.7rem;
+    line-height: 10px;
+
+  }
+
+
+  .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 0.5rem;
+    transition: 0.3s ease-in-out;
+  }
+  .border-p-products p{
+    width: 70%;
+    font-size: 0.4rem;
+    margin: 0 30px;
+  }
+
+  .C{
+    height: 20em;
+  }
+  
+  .C h1{
+    font-size: 7rem;
+    opacity: 0.7;
+  }
+
+  .border-title-para-clients p{
+    width: 90%;
+    margin: 0 10px;
+    font-size: 0.5rem;
+    display: flex;
+    height: 0em;
+    align-items: end;
+  }
+  .navbar ul{
+    padding: 0 0px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .navbar ul li{
+    display: flex;
+    margin: 0 10px;
+  }
+  
+  
+.product{
+  width: 88%;
+  height: 28%;
+  background: grey;
+  cursor: pointer;
+}
+
+.products-title{
+  font-size: 2rem;
+  height: 13em;
+  display: flex;
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+  padding: 0 120px;
+}
+
+
+}

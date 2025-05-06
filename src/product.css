@@ -1,0 +1,618 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'fontMain';
+    cursor: default;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+  
+@font-face {
+    font-family: 'fontMain';
+    src: url(../public/fonts/AutautGrotesk-Medium.otf);
+}
+.para-products{
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: end;
+  padding: 0 60px;
+}
+.para-products p{
+  width: 50%;
+  margin: -400px 0;
+}
+.first-page-img-full{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.584) , rgba(0, 0, 0, 0.584)) ,url(../public/images/pexels-pixabay-221047.jpg) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-page-img-full h1{
+    font-size: 7rem;
+    color: white;
+
+}
+
+
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 5em;
+    z-index: 99999999999;
+}
+.navbar ul{
+    padding: 0 90px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+.navbar ul li{
+    display: flex;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
+    animation: change-colorCss;
+    animation-timeline: scroll();
+    transition: 0.3s ease-in-out;
+}
+
+
+
+@keyframes change-colorCss{
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+.navbar ul li a:hover{
+  background: cyan;
+}
+  
+.products-list-bg{
+    background: white;
+    height: 200vh;
+    width: 100%;
+
+  display: flex;
+}  
+
+
+
+
+.products-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    padding:40px 3px;
+    flex-wrap: wrap;
+    gap: 0 4px ;
+}
+.product a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.product{
+    width: 33%;
+    height: 540px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img{
+    width: 90%;
+    height: 60%;
+    background-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.product-name{
+    font-size: 3.1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: start;
+    height: 90px;
+    padding: 0 10px;
+}
+
+
+
+.endContacts{
+    width: 100%;
+    height: 100vh;
+    background: rgb(218, 218, 218);
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  
+  .end-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 18em;
+    align-items: start;
+  }
+  .end-links li{
+    display: flex;
+    margin-right: 210px;
+    margin-top: 230px ;
+  }
+  .end-links ul{
+    font-size: 0.7rem;
+  }
+  .end-title{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 27em;
+    align-items: end;
+  }
+  .end-title h1{
+    font-size: 9rem;
+    margin: 0 20px;
+    transform: scaleY(1.2);
+    letter-spacing: -2px;
+  
+}
+
+
+.product1{
+  height: 270vh;
+  width: 100%;
+  background-color: white;
+}
+.product2{
+  height: 170vh;
+  width: 100%;
+  background-color: white;
+}
+.product-title{
+  font-size: 4rem;
+  height: 30vh;
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+.product-title h1{
+  text-align: start;
+  width: 80%;
+  font-size: 4rem;
+  color: black;
+    margin: 0 30px;
+}
+
+.per{
+  width: 100%;
+  height: 80vh;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.per h1{
+
+  font-size: 3rem;
+  margin: 0 30px;
+}
+
+.per h2{
+  opacity: 60%;
+  font-size: 3rem;
+  margin: 0 30px;
+}
+
+
+
+
+@media (max-width: 1290px) {
+
+  
+   
+    .product{
+      justify-content: space-between;
+      padding: 40px 0;
+      height: 400px;
+    }
+    .product-name{
+      width: 100%;
+      font-size: 1.8rem;
+    }
+    
+
+    .img{
+      height:60%;
+    }
+
+    
+}
+  
+  
+  @media (max-width: 920px) {
+
+    
+
+
+.first-page-img-full h1{
+    font-size: 4rem;
+}
+
+
+    .end-links li , .end-links ul{
+      margin: 40px 0;
+    }
+  
+
+.products-list{
+  justify-content: center;
+  height: 80%;
+}
+.products-list-bg{
+  background: white;
+  height: 390vh;
+  width: 100%;  
+
+}  
+.img{
+  height: 100%;
+  width: 97%;
+}
+
+    
+    .products-list-bg{
+        background: white;
+        height: 190vh;
+        width: 100%;
+        
+    }  
+    .product{
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    
+    .C h1{
+      font-size: 9rem;
+      opacity: 0.7;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      padding: 2px;
+      font-size: 0.7rem;
+      transition: 0.3s ease-in-out;
+    }
+    
+  .border-title-para-clients p{
+    width: 70%;
+    margin: 0 30px;
+    font-size: 0.6rem;
+    display: flex;
+    height: 40em;
+    align-items: end;
+  }
+    
+  .the-clients{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .content:nth-child(2) {
+    display: none;
+  }
+  .content{
+    animation: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .clients img{
+    height: 10vh;
+    width: auto;
+    margin: 20px;
+  }
+  .services-title h1{
+    font-size: 3.8rem;
+    margin: 0 30px;
+  }
+  .services-title{
+    height: 2em;
+    align-items: top;
+  
+  } 
+
+  .para-products{
+    display: none;
+  }
+  
+  .end-title h1{
+    font-size: 3.8rem;
+  }
+  .end-links{
+    align-items: center;
+  }
+  .end-links li{
+    margin: 0 20px;
+  }
+  .end-links ul{
+    margin: 0 20px;
+  }
+  
+  
+  .product{
+    width: 78%;
+    height: 28%;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  
+  }
+  
+  @media (max-width: 504px) {
+    .home-img-banner{
+      width: 70%;
+      background-size: cover;
+    }
+    
+
+    .products-list-bg{
+      background: white;
+      height:650vh;
+      width: 100%;
+  
+  } 
+  .product-list{
+    height: 170%;
+  }
+
+
+
+    .the-clients{
+      height: 00vh;
+      flex-wrap: wrap;
+      width: 80%;
+    }
+  
+  
+    .border-home-title{
+      height: 30vh;
+    }
+    .services-grid{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .services{
+      height: 190vh;
+    }
+    .services-title{
+      font-size: 2rem;
+      height: 10em;
+      align-items: center;
+    }
+    .client{
+      height: 480px;
+    }
+    .client img{
+      height: 6%;
+      width: auto;
+    }
+    .grid{
+      width: 90%;
+      height: 17em;
+    }
+  
+  .clients-title{
+    font-size:0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 15em;
+  }
+
+  .product-title h1:nth-child(1){
+    font-size: 1.4rem;
+  }
+  .product-title h1{
+    font-size: 2rem;
+  }
+  .per h1{
+    font-size: 2rem;
+  }
+  .per h2{
+    font-size: 1rem;
+    margin: 0 40px;
+  }
+  
+    .border-home-title h5{
+      font-size: 0.8rem;
+      line-height: 13px;
+  
+    }
+    .end-title{
+      height: 0;
+    }
+    
+
+
+    .navbar ul li a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      padding: 2px;
+      font-size: 0.5rem;
+      transition: 0.3s ease-in-out;
+    }
+    .border-p-products p{
+      width: 70%;
+      font-size: 0.5rem;
+    }
+    .products-list-bg{
+      height: 300vh;
+    }
+    .C{
+      height: 20em;
+    }
+    
+    .C h1{
+      font-size: 7rem;
+      opacity: 0.7;
+    }
+    .img{
+      height: 60%;
+      width: 80%;
+      border-radius: 2;
+    }
+    .end-links li , .end-links ul{
+      font-size: 0.5rem;
+    }
+
+    .end-title{
+      height: 50vh;
+    }
+    .border-title-para-clients p{
+      width: 90%;
+      margin: 0 10px;
+      font-size: 0.5rem;
+      display: flex;
+      height: 0em;
+      align-items: end;
+    }
+    .product-name{
+      font-size:2rem
+    }
+  .product{
+    width: 88%;
+    height: 24%;
+    background: white;
+    cursor: pointer;
+    padding: 40px 0;
+  }
+  .product-title1{
+    font-size: 0.2rem;
+  }
+  
+  }
+  
+
+  .product-title1{
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 424px) {
+    .home-img-banner{
+      width: 70%;
+    }
+    
+
+    .product-title1{
+      font-size: 0.9rem;
+    }
+
+
+    .product-title h1{
+      font-size: 2.9rem;
+    }
+    .per h1{
+      font-size: 1.5rem;
+    }
+    .per h2{
+      font-size: 1.2rem;
+      margin: 0 40px;
+    }
+
+
+ 
+.first-page-img-full h1{
+    font-size: 3rem;
+}
+  
+    .end-links{
+      height: 20em;
+      display: flex;
+      align-items: center;
+    }
+    .end-links li , .end-links ul{
+      font-size: 0.5rem;
+    }
+  
+  
+    .end-title{
+      height: 20em;
+    }
+    .end-title h1{
+      font-size: 3.2rem;
+    }
+  
+    .border-home-title h5{
+      font-size: 0.7rem;
+      line-height: 10px;
+  
+    }
+  
+  
+    .navbar ul li a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      padding: 2px;
+      font-size: 0.5rem;
+      transition: 0.3s ease-in-out;
+    }
+    .navbar ul{
+      padding: 0 0px;
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+    .product-name{
+      font-size: 1.6rem;
+    }
+    .navbar ul li{
+      display: flex;
+      margin: 0 10px;
+    }
+    
+    
+ 
+  }

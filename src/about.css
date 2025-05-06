@@ -1,0 +1,653 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'fontMain';
+    cursor: default;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+  
+@font-face {
+    font-family: 'fontMain';
+    src: url(../public/fonts/AutautGrotesk-Medium.otf);
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 5em;
+    z-index: 99999999999;
+}
+.navbar ul{
+    padding: 0 90px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+.navbar ul li{
+    display: flex;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
+    animation: change-colorCss;
+    animation-timeline: scroll();
+    transition: 0.3s ease-in-out;
+}
+
+
+.navbar ul li a:hover{
+    background: cyan;
+}
+    
+.products-list-bg{
+      background: white;
+      height: 200vh;
+      width: 100%;
+  
+    display: flex;
+}  
+  
+.endContacts{
+width: 100%;
+height: 100vh;
+background: rgb(218, 218, 218);
+}
+
+body{
+overflow-x: hidden;
+}
+
+.end-links{
+width: 100%;
+display: flex;
+justify-content: center;
+height: 18em;
+align-items: start;
+}
+.end-links li{
+display: flex;
+margin-right: 210px;
+margin-top: 230px ;
+}
+.end-links ul{
+font-size: 0.7rem;
+}
+.end-title{
+width: 100%;
+display: flex;
+justify-content: end;
+height: 27em;
+align-items: end;
+}
+.end-title h1{
+font-size: 9rem;
+margin: 0 20px;
+transform: scaleY(1.2);
+}
+
+
+.about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.about-title{
+width: 60%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: start;
+flex-direction: column;
+}
+
+.about-title h1{
+    font-size: 3rem;
+    margin: 0 40px;
+}
+.about-title p{
+    font-size: 1.3rem;
+    width: 90%;
+    margin: 0 20px;
+}
+
+.left-side-img{
+    width: 40%;
+    height: 100vh;
+    background: url(../public/images/about-img.jpg);
+}
+
+.about-first-page-down{
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+    font-size: 0.7rem;
+}
+.about-first-page-down p {
+    width: 56%;
+    text-align: end;
+}
+.what-we-do{
+    height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.para-services{
+    width: 70%;
+    margin: 0 100px;
+}
+.sec-page-title{
+    font-size: 4rem;
+}
+.what-we-do-more{
+    width: 100%;
+    height: 50vh;
+}
+.what-we-do-title h1{
+    font-size: 5rem;
+}
+.what-we-do-title p{
+    font-size: 0.8rem;
+    width: 80%;
+    margin: 50px;
+}
+
+.reasons {
+    height: 3em;
+    margin: 30px 0;
+   
+}
+.reasons li{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 3em;
+}
+
+
+
+
+@media (max-width: 1290px) {
+
+  
+   
+    .product{
+      justify-content: space-between;
+      padding: 40px 0;
+      height: 400px;
+    }
+    .product-name{
+      width: 100%;
+      font-size: 1.8rem;
+    }
+    
+
+    .img{
+      height:60%;
+    }
+
+    
+}
+  
+  
+  @media (max-width: 920px) {
+
+    
+
+
+.first-page-img-full h1{
+    font-size: 4rem;
+}
+
+
+    .end-links li , .end-links ul{
+      margin: 40px 0;
+    }
+  
+
+.products-list{
+  justify-content: center;
+  height: 80%;
+}
+.products-list-bg{
+  background: white;
+  height: 390vh;
+  width: 100%;  
+
+}  
+.img{
+  height: 100%;
+  width: 97%;
+}
+
+    
+    .products-list-bg{
+        background: white;
+        height: 190vh;
+        width: 100%;
+        
+    }  
+    .product{
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    
+    .C h1{
+      font-size: 9rem;
+      opacity: 0.7;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      padding: 2px;
+      font-size: 0.7rem;
+      transition: 0.3s ease-in-out;
+    }
+    
+  .border-title-para-clients p{
+    width: 70%;
+    margin: 0 30px;
+    font-size: 0.6rem;
+    display: flex;
+    height: 40em;
+    align-items: end;
+  }
+    
+  .the-clients{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .content:nth-child(2) {
+    display: none;
+  }
+  .content{
+    animation: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .clients img{
+    height: 10vh;
+    width: auto;
+    margin: 20px;
+  }
+  .services-title h1{
+    font-size: 3.8rem;
+    margin: 0 30px;
+  }
+  .services-title{
+    height: 2em;
+    align-items: top;
+  
+  } 
+
+  .para-products{
+    display: none;
+  }
+  
+  .end-title h1{
+    font-size: 3.8rem;
+  }
+  .end-links{
+    align-items: center;
+  }
+  .end-links li{
+    margin: 0 20px;
+  }
+  .end-links ul{
+    margin: 0 20px;
+  }
+  
+  
+  .product{
+    width: 78%;
+    height: 28%;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  
+  }
+  
+  @media (max-width: 504px) {
+    .home-img-banner{
+      width: 70%;
+      background-size: cover;
+    }
+    
+    .end-links{
+        height: 20em;
+        display: flex;
+        align-items: center;
+      }
+      .end-links li , .end-links ul{
+        font-size: 0.5rem;
+      }
+    
+      .endContacts{
+        width: 129%;
+      }
+      .end-title{
+        height: 20em;
+      }
+      .end-title h1{
+        font-size: 3.2rem;
+      }
+    .products-list-bg{
+      background: white;
+      height:650vh;
+      width: 100%;
+  
+      
+  } 
+  .end-links{
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .end-links li{
+    margin: 0px 20px;
+    font-size: 0.4rem;
+  }
+  .product-list{
+    height: 170%;
+  }
+
+
+
+    .the-clients{
+      height: 00vh;
+      flex-wrap: wrap;
+      width: 80%;
+    }
+  
+  
+    .border-home-title{
+      height: 30vh;
+    }
+    .services-grid{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .services{
+      height: 190vh;
+    }
+    .services-title{
+      font-size: 2rem;
+      height: 10em;
+      align-items: center;
+    }
+    .client{
+      height: 480px;
+    }
+    .client img{
+      height: 6%;
+      width: auto;
+    }
+    .grid{
+      width: 90%;
+      height: 17em;
+    }
+  
+  .clients-title{
+    font-size:0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 15em;
+  }
+
+  .product-title h1:nth-child(1){
+    font-size: 1.4rem;
+  }
+  .product-title h1{
+    font-size: 2rem;
+  }
+  .per h1{
+    font-size: 2rem;
+  }
+  .per h2{
+    font-size: 1rem;
+    margin: 0 40px;
+  }
+
+  .about-first-page-down{
+    display: none;
+}
+.about{
+    height: 140vh;
+    flex-direction: column;
+}
+body{
+    overflow-x: hidden;
+}
+.left-side-img{
+    width: 100%;
+    display: none;
+    background-size: cover;
+}
+.about-title{
+    width: 100%;
+}
+.about-title h1{
+            font-size: 1.7rem;
+}
+.about-title p{
+    font-size: 0.6rem;
+    width: 124%;
+}
+
+    .border-home-title h5{
+      font-size: 0.8rem;
+      line-height: 13px;
+  
+    }
+    .end-title{
+      height: 0;
+    }
+    
+    .about{
+        height: 50vh;
+    }
+
+    .sec-page-title h1{
+        font-size: 4.3rem;
+        width: 110%;
+    }
+    .para-services{
+        font-size: 0.6rem;
+        
+    }
+    .para-services p{
+        width: 150%;
+    }
+    .reasons{
+        font-size: 0.5rem;
+    }
+    .reasons li{
+        margin: 50px 20px;
+        width: 100%;
+    }
+    .what-we-do-title h1{
+        font-size: 2.5rem;
+        margin: 0 60px;
+    }
+    .what-we-do-title p{
+        font-size: 0.6rem;
+        margin: 20px 10px;
+        width: 120%;
+    }
+
+    .navbar ul li a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      padding: 2px;
+      width: 10%;
+      font-size: 0.5rem;
+      transition: 0.3s ease-in-out;
+    }
+    .navbar ul{
+        align-items: start;
+        
+    }
+    .border-p-products p{
+      width: 70%;
+      font-size: 0.5rem;
+    }
+    .products-list-bg{
+      height: 300vh;
+    }
+    .C{
+      height: 20em;
+    }
+    
+    .C h1{
+      font-size: 7rem;
+      opacity: 0.7;
+    }
+    .img{
+      height: 60%;
+      width: 80%;
+      border-radius: 2;
+    }
+    .end-links li , .end-links ul{
+      font-size: 0.5rem;
+    }
+
+    .end-title{
+      height: 50vh;
+    }
+    .border-title-para-clients p{
+      width: 90%;
+      margin: 0 10px;
+      font-size: 0.5rem;
+      display: flex;
+      height: 0em;
+      align-items: end;
+    }
+    .product-name{
+      font-size:2rem
+    }
+  .product{
+    width: 88%;
+    height: 24%;
+    background: white;
+    cursor: pointer;
+    padding: 40px 0;
+  }
+  .product-title1{
+    font-size: 0.2rem;
+  }
+  
+  }
+  
+
+  .product-title1{
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 424px) {
+    .home-img-banner{
+      width: 70%;
+    }
+    
+
+    
+
+    .product-title1{
+      font-size: 0.9rem;
+    }
+
+
+    .product-title h1{
+      font-size: 2.9rem;
+    }
+    .per h1{
+      font-size: 1.5rem;
+    }
+    .per h2{
+      font-size: 1.2rem;
+      margin: 0 40px;
+    }
+
+
+ 
+.first-page-img-full h1{
+    font-size: 3rem;
+}
+  
+    .end-links{
+      height: 20em;
+      display: flex;
+      align-items: center;
+    }
+    .end-links li , .end-links ul{
+      font-size: 0.5rem;
+    }
+  
+  
+    .end-title{
+      height: 20em;
+    }
+    .end-title h1{
+      font-size: 3.2rem;
+    }
+  
+    .border-home-title h5{
+      font-size: 0.7rem;
+      line-height: 10px;
+  
+    }
+  
+  
+    .navbar ul li a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      padding: 2px;
+      font-size: 0.5rem;
+      transition: 0.3s ease-in-out;
+    }
+    .navbar ul{
+      padding: 0 0px;
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+    .product-name{
+      font-size: 1.6rem;
+    }
+    .navbar ul li{
+      display: flex;
+      margin: 0 10px;
+    }
+    
+    
+ 
+  }
